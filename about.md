@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
+title: Sobre mí
 permalink: /about/
 ---
 
-Some information about you!
+Soy ingenierio informático con un máster en Ciberseguridad y algunas certificaciones como la D-CEHA o la D-CFIA. 
 
-### More Information
+### Más información
 
-A place to include any other types of information that you'd like to include about yourself.
+Apasionado por el cine y aficionado al carnaval y al fútbol, siendo socio del Cádiz CF.
 
-### Contact me
+### Contacto
 
-[email@domain.com](mailto:email@domain.com)
+[emiliofigueras93@gmail.com](mailto:emiliofigueras93@gmail.com)
