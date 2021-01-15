@@ -8,7 +8,7 @@ Soy ingenierio informático con un máster en Ciberseguridad y algunas certifica
 
 ### Más información
 
-Apasionado por el cine y aficionado al carnaval y al fútbol, siendo socio del Cádiz CF.
+Apasionado por el cine y aficionado al carnaval y al fútbol, más concretamente, aficionado a Cádiz.
 
 ### Contacto
 
