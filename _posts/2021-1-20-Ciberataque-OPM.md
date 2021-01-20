@@ -6,13 +6,13 @@ categories: Ataque
 
 La fuga de información de la Oficina de Gestión de Personal (OPM) fue una **masiva filtración de datos pertenecientes al gobierno federal de Estados Unidos**. El ataque ocurre sobre un sistema de misión crítica. La fuga de datos solo de este ataque ya supone un alto riesgo por su contenido, pero podremos ver como relacionando estos datos filtrados con otros ataques similares se obtiene información aún más relevante sobre las víctimas. También está presente en este caso el ciberespionaje y los ciberataques entre Estados.
 
-Estas es una de las filtraciones más escandalosas relacionadas con el Gobierno de Estados Unidos. La filtración se realiza sobre la OPM. **La OPM es la agencia que proporciona fuerza laboral al gobierno y está a cargo de los recursos humanos, recursos médicos, seguros de vida o jubilación de empleados del Gobierno Federal o jubilados, entre otros.** 
+Esta es una de las filtraciones más escandalosas relacionadas con el Gobierno de Estados Unidos. La filtración se realiza sobre la OPM. **La OPM es la agencia que proporciona fuerza laboral al gobierno y está a cargo de los recursos humanos, recursos médicos, seguros de vida o jubilación de empleados del Gobierno Federal o jubilados, entre otros.** 
 
 Inicialmente fueron robados datos de 4 millones de personas, pero las investigaciones siguientes ascienden este número hasta las **21.5 millones de personas**. 
 
-La información robada era tanto de trabajadores como personas que han solicitado trabajar. Había información usada para dibujar perfiles psicológicos de las personas, es decir, **datos relacionados con la orientación sexual, religión o drogas, además del número de la seguridad social.** 
+La información robada era tanto de trabajadores como de personas que han solicitado trabajar. Había información usada para dibujar perfiles psicológicos de las personas, es decir, **datos relacionados con la orientación sexual, religión o drogas, además del número de la seguridad social.** 
 
-Entre los datos robados hay **información de 1.8 millones de personas que no tienen relación directa con la OPM**, pero estaban ahí porque pertenecían al círculo social de algún trabajador o solicitante de trabajo, es decir, esposos, amigos, compañeros de piso…
+Entre los datos robados hay **información de 1.8 millones de personas que no tienen relación directa con la OPM**, pero estaban ahí porque pertenecían al círculo social de algún trabajador o solicitante de trabajo, es decir, parejas, amigos, compañeros de piso…
 
 Muchos de estos datos no estaban encriptados, aunque conociendo como de sofisticado fue el ataque probablemente no hubiese sido relevante que los datos estuviesen encriptados. 
 
@@ -22,7 +22,7 @@ Detrás de este ataque estaba China. No hay confirmación oficial de qué grupo 
 
 **Con el robo de datos de ciudadanos estadounidenses es posible realizar un perfil de “vulnerabilidades humanas”.** Las “vulnerabilidades humanas” pueden resumirse con el acrónimo MICE (Money, Ideology, Coercion and Ego) y sirve para atraer personas hacia el espionaje. 
 
-Que el espionaje chino conozca la situación financiera de ciudadanos estadounidenses puede suponer un riesgo cuando sean capaces de cruzar datos y conocer sus trabajos, deudas económicas, personas que quieren mejorar su calidad de vida o gastos inmorales con los que puedan ser chantajeados. Toda esta información es obtenida a través de múltiples intrusiones. Por ejemplo, a través del robo del número de la seguridad social y cruzándolo con otras bases de datos robadas se pueden obtener las deudas de las personas, o cruzándolo con la información robado en la filtración de datos de Ashley Madison se podría obtener las infidelidades de la víctima, una **información de utilidad para el chantaje.**
+Que el espionaje chino conozca la situación financiera de ciudadanos estadounidenses puede suponer un riesgo cuando sean capaces de cruzar datos y conocer sus trabajos, deudas económicas, personas que quieren mejorar su calidad de vida o gastos inmorales con los que puedan ser chantajeados. Toda esta información es obtenida a través de múltiples intrusiones. Por ejemplo, a través del robo del número de la seguridad social y cruzándolo con otras bases de datos robadas se pueden obtener las deudas de las personas, o cruzándolo con la información robada en la filtración de datos de Ashley Madison se podría obtener las infidelidades de la víctima, una **información de utilidad para el chantaje.**
 
 En este caso, además, se robó la información de los círculos sociales de las víctimas, haciendo posible conocer si hay alguna persona vulnerable en el entorno de la víctima objetivo con la que poder chantajearlo, pudiendo ser el objetivo principal un empleado federal o diplomático.
 
@@ -38,9 +38,9 @@ El grupo detrás de APT1 se conoce como Comment Crew o Byzantine Candor, que fue
 
 ### ¿Qué ocurrió?
 
-**El 15 de abril de 2015 el ingeniero de seguridad de la OPM Brendan Saulsbury** estaba desencriptando tráfico SSL para ver qué tipo de datos se movían por la red de la agencia. .**En este proceso de monitorización encontró tráfico saliente extraño hacia un dominio aparentemente legítimo e interno de la agencia. Este dominio era opmsecurity.org.** Saulsbury, quien llevaba trabajando mucho tiempo en la agencia, observó que el dominio realmente no pertenecía a la OPM y comenzó a investigar. 
+**El 15 de abril de 2015 el ingeniero de seguridad de la OPM Brendan Saulsbury** estaba desencriptando tráfico SSL para ver qué tipo de datos se movían por la red de la agencia. **En este proceso de monitorización encontró tráfico saliente extraño hacia un dominio aparentemente legítimo e interno de la agencia. Este dominio era opmsecurity.org.** Saulsbury, quien llevaba trabajando mucho tiempo en la agencia, observó que el dominio realmente no pertenecía a la OPM y comenzó a investigar. 
 
-Haciendo uso de un producto de seguridad de Cylance anaĺizó lo que había encontrado para localizar la fuente del tráfico. **El origen estaba en una biblioteca llamada mcutil.dll que está asociada con McAfee.** El punto aquí estaba en que la agencia no tenía ningún producto de McAfee contratado, por lo que esta biblioteca debía estar relacionada con el malware que había filtrado datos. 
+Haciendo uso de un producto de seguridad de Cylance analizó lo que había encontrado para localizar la fuente del tráfico. **El origen estaba en una biblioteca llamada mcutil.dll que está asociada con McAfee.** El punto aquí estaba en que la agencia no tenía ningún producto de McAfee contratado, por lo que esta biblioteca debía estar relacionada con el malware que había filtrado datos. 
 
 Una vez que **el malware** estaba localizado se le aplicó ingeniería inversa para descubrir que este **era una variante de PlugX**, la cual es una herramienta de acceso remoto relacionada con cibercriminales chinos. 
 
@@ -70,7 +70,7 @@ El formulario Estándar 86 es un cuestionario de 127 páginas con información p
 
 También **se robaron 5600000 huellas dactilares de empleados gubernamentales**. Con esta información los atacantes podían saltarse el sistema de acceso biométrico de la compañía. 
 
-Los analistas sabían que, después de la enorme cantidad de información que se había llevado, sacar a los ciberdelincuentes del sistema era una pequeña pero necesaria victoria. **Al principio ellos tocaban lo mínimo posible y solo limitaron el ancho de banda de salida.** Sabían que un paso en falso en la desinfección y desinstalación del malware podría hacer que los atacantes entraran en modo reposo, volviendo a ingresar meses después a través de una “backdoor”. Además, los ciberdelincuentes llevaban más de un año en la agencia, por lo que conocían bastante bien a la empresa. 
+Los analistas sabían que, después de la enorme cantidad de información que se habían llevado, sacar a los ciberdelincuentes del sistema era una pequeña pero necesaria victoria. **Al principio ellos tocaban lo mínimo posible y solo limitaron el ancho de banda de salida.** Sabían que un paso en falso en la desinfección y desinstalación del malware podría hacer que los atacantes entraran en modo reposo, volviendo a ingresar meses después a través de una “backdoor”. Además, los ciberdelincuentes llevaban más de un año en la agencia, por lo que conocían bastante bien a la empresa. 
 
 A finales de abril, aprovechando que se iban a realizar unos cortes de luz en el edificio para renovar el sistema eléctrico, **se aprovechó ese momento sin vigilancia externa de los atacantes para expulsarlos definitivamente.**
 
@@ -80,7 +80,7 @@ Dentro de la secuencia de eventos que causaron la brecha de información en OPM 
 
 Las credenciales de acceso de KeyPoint les daba acceso no administrativo sobre la red de OPM, por lo que realizaron una **escalada de privilegios en Active Directory.**
 
-A través del **software Mimikatz** explotaron una vulnerabilidad en el LSASS de los Windows Servers para obtener un volcado de memoria de todas las credenciales de los usuarios logueados. Entre las credenciales obtenidas estaban las de usuarios con acceso de administrador. Las contraseñas obtenidas no estaban en texto plano sino que eran hashes NTLM. 
+A través del **software Mimikatz** explotaron una vulnerabilidad en LSASS (Local Security Authority Subsystem Service) de los Windows Servers para obtener un volcado de memoria de todas las credenciales de los usuarios logueados. Entre las credenciales obtenidas estaban las de usuarios con acceso de administrador. Las contraseñas obtenidas no estaban en texto plano sino que eran hashes NTLM. 
 
 **Se explotó otra vulnerabilidad de Windows Server** haciendo uso de los nombres de usuarios y los hashes NTLM de cuentas de administrador. El protocolo de autenticación NTLM no verificaba la contraseña en texto plano, por lo que era posible autenticarse haciendo uso del nombre de usuario en texto plano y la contraseña como un hash NTLM. Este método se conoce como **ataque Pass-the-Hash** y se utilizó para obtener acceso de administrador en el sistema. 
 
@@ -120,11 +120,11 @@ Conference by Marta López Pardal at C0r0n4Con.
 
 [Inside the OPM Hack, the Cyberattack That Shocked the US Government](https://www.wired.com/2016/10/inside-cyberattack-shocked-us-government/)
 
-[APT1: Exposing One of China's Cyber Espionage Units | Mandiant](https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf)
+[APT1: Exposing One of China's Cyber Espionage Units - Mandiant](https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf)
 
 [Motives for spying](https://en.wikipedia.org/wiki/Motives_for_spying)
 
-[¿Qué es una APT? – Kaspersky Daily | Blog oficial de Kaspersky](https://www.kaspersky.es/blog/que-es-una-apt/966/)
+[¿Qué es una APT? – Kaspersky Daily - Blog oficial de Kaspersky](https://www.kaspersky.es/blog/que-es-una-apt/966/)
 
 [The OPM hack explained: Bad security practices meet China's Captain America](https://www.csoonline.com/article/3318238/the-opm-hack-explained-bad-security-practices-meet-chinas-captain-america.html)
 
@@ -132,7 +132,7 @@ Conference by Marta López Pardal at C0r0n4Con.
 
 [Take a Deep Dive into PlugX Malware](https://logrhythm.com/blog/deep-dive-into-plugx-malware/)
 
-[APT1, Comment Crew, Comment Group, Comment Panda, Group G0006 | MITRE ATT&CK](https://attack.mitre.org/groups/G0006/)
+[APT1, Comment Crew, Comment Group, Comment Panda, Group G0006 - MITRE ATT&CK](https://attack.mitre.org/groups/G0006/)
 
 [Chinese man behind US hacks back to teaching computing in Shanghai](https://www.scmp.com/news/world/united-states-canada/article/3043451/chinese-man-behind-us-hacks-back-teaching-computing)
 
