@@ -10,6 +10,7 @@ En este artículo se va a analizar una imagen de memoria RAM afectada por el mal
 
 El escenario para realizar este análisis es que disponemos de una imagen de la memoria RAM afectada por WannaCry en el archivo llamado malware.raw, y un binario del malware.
 Vamos a comenzar analizando el binario. Para ello sacaremos información sobre él con el comando file:
+
 ![WannaCry 01]({{ site.baseurl }}/images/wannacry01.png)
 
 Así podemos saber que es un ejecutable que, a priori, no parece estar empaquetado.
