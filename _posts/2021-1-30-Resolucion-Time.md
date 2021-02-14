@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Resolución de Time (WriteUp)
+published: false
 categories: WriteUp
 ---
 
