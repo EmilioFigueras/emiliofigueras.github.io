@@ -31,7 +31,7 @@ En primer lugar elegiremos un servicio de correos temporales, en este ejemplo ut
 
 ![ByPass Correo 01]({{ site.baseurl }}/images/bypassCorreo01.png)
 
-Como podemos observar, en el caso de Guerrilla Mail utiliza para gestionar los correos mail.guerrillamail.com, mientras que en el caso de Mailinator utiliza mail.mailinator.com y mail2.mailinator.com. 
+Como podemos observar, en el caso de Guerrilla Mail utiliza para gestionar los correos mail.guerrillamail.com (o mail.guerrillamail.org, entre otros dominios que tiene este servicio), mientras que en el caso de Mailinator utiliza mail.mailinator.com y mail2.mailinator.com. 
 
 Ahora nos creamos un buzón en Guerrilla Mail:
 
