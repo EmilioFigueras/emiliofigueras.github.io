@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Resolución de Delivery (WriteUp)
-published: false
 categories: WriteUp
 ---
 
